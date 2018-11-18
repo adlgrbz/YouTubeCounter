@@ -18,6 +18,11 @@ api_key    = '***  Your API key   ***'
 channel_id = '*** Your channel ID ***'
 `
 
+How is Channel ID retrieved ?
+<p align="left">
+  <img width="514" height="33" src="https://github.com/adlgrbz/YouTubeCounter/blob/master/images/channel-id.JPG">
+</p>
+
 ## Getting Started
 Download PySerial module for Python.
 ```python
