@@ -24,9 +24,14 @@ How is Channel ID retrieved ?
 </p>
 
 ## Getting Started
-Download PySerial module for Python.
+Download pyserial module for Python.
 ```python
 pip install pyserial
+```
+
+Download requests module for Python.
+```python
+pip install requests
 ```
 
 Run counter.py
