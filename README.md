@@ -13,15 +13,15 @@ To get API key: [YouTube Data API v3](https://console.cloud.google.com/apis/libr
 api_key    = '***  Your API key   ***'
 `
 
-:point_right: Enter channel ID
-`
-channel_id = '*** Your channel ID ***'
-`
-
 How is Channel ID retrieved ?
 <p align="left">
   <img width="514" height="33" src="https://github.com/adlgrbz/YouTubeCounter/blob/master/images/channel-id.JPG">
 </p>
+
+:point_right: Enter channel ID
+`
+channel_id = '*** Your channel ID ***'
+`
 
 ## Getting Started
 Download pyserial module for Python.
