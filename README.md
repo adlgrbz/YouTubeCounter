@@ -5,13 +5,15 @@
 # YouTubeCounter
 YouTube Counter with Arduino and Python
 
-## API key and Channel ID
+#### API key and Channel ID
 To get API key: [YouTube Data API v3](https://console.cloud.google.com/apis/library/youtube.googleapis.com?q=YouTube&id=125bab65-cfb6-4f25-9826-4dcc309bc508&project=youtube-api-222616&folder&organizationId)
 
 :point_right: Enter your API key
 `
 api_key    = '***  Your API key   ***'
 `
+
+___
 
 How is Channel ID retrieved ?
 <p align="left">
@@ -23,7 +25,7 @@ How is Channel ID retrieved ?
 channel_id = '*** Your channel ID ***'
 `
 
-## Getting Started
+### Getting Started
 Download pyserial module for Python.
 ```python
 pip install pyserial
@@ -43,5 +45,5 @@ Enter port name.
 ```python
 Port Name (Sample: COM5): 
 ```
-## Last
+#### Last
 :movie_camera: Visit Channel: [https://www.youtube.com/channel/UCWxZWN7gi0h2ZylI2XF6g9w/featured](https://www.youtube.com/channel/UCWxZWN7gi0h2ZylI2XF6g9w/featured)
