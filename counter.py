@@ -33,13 +33,16 @@ def counter():
 
 #+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#
 
-portName = input('Port Name (Sample: COM5): ')
+while True:
+    portName = input('\nPort Name (Sample: COM5): ')
 
-try:
-    port = serial.Serial(portName, 9600)
-    print(port.isOpen())
-except:
-    print('Port Name Incorrect !')
+    try:
+        port = serial.Serial(portName, 9600)
+        print(port.isOpen())
+        break
+    except:
+        print('Port Name Incorrect !')
+        continue
     
 while True:
     port.write(str.encode(counter()[1])) # subscriberCount
