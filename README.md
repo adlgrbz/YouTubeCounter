@@ -17,7 +17,7 @@ Enter your API key [counter.py ](https://github.com/adlgrbz/YouTubeCounter/blob/
   <img width="514" height="33" src="https://github.com/adlgrbz/YouTubeCounter/blob/master/images/channel-id.JPG">
 </p>
 
-Enter channel ID go [counter.py ](https://github.com/adlgrbz/YouTubeCounter/blob/master/counter.py)
+Enter channel ID [counter.py ](https://github.com/adlgrbz/YouTubeCounter/blob/master/counter.py)
 `channel_id = '*** Your channel ID ***'
 `
 
