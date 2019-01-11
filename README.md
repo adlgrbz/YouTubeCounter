@@ -3,17 +3,13 @@
 </p>
 
 # YouTubeCounter
-YouTube Counter with Arduino and Python
+YouTube Subscriber Counter with Arduino and Python
 
-#### API key and Channel ID
+### API key and Channel ID
 + To get API key: [YouTube Data API v3](https://console.cloud.google.com/apis/library/youtube.googleapis.com?q=YouTube&id=125bab65-cfb6-4f25-9826-4dcc309bc508&project=youtube-api-222616&folder&organizationId)
 
 Enter your API key
-`
-api_key    = '***  Your API key   ***'
-`
-
-___
+`api_key    = '***  Your API key   ***'`
 
 + How is Channel ID retrieved ?
 <p align="left">
@@ -21,19 +17,12 @@ ___
 </p>
 
 Enter channel ID
-`
-channel_id = '*** Your channel ID ***'
-`
+`channel_id = '*** Your channel ID ***'`
 
 ### Getting Started
-Download pyserial module for Python.
+Download the packages.
 ```python
-pip install pyserial
-```
-
-Download requests module for Python.
-```python
-pip install requests
+pip install -r requirements.txt
 ```
 
 Run counter.py
