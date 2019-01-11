@@ -42,7 +42,6 @@ while True:
         break
     except:
         print('Port Name Incorrect !')
-        continue
     
 while True:
     port.write(str.encode(counter()[1])) # subscriberCount
