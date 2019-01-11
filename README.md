@@ -10,7 +10,7 @@ YouTube Subscriber Counter with Arduino and Python
 
 Enter your API key
 `api_key    = '***  Your API key   ***'
-` go [counter.py](https://github.com/adlgrbz/YouTubeCounter/blob/master/counter.py)
+`  go [counter.py](https://github.com/adlgrbz/YouTubeCounter/blob/master/counter.py)
 
 + How is Channel ID retrieved ?
 <p align="left">
@@ -19,7 +19,7 @@ Enter your API key
 
 Enter channel ID
 `channel_id = '*** Your channel ID ***'
-` go [counter.py](https://github.com/adlgrbz/YouTubeCounter/blob/master/counter.py)
+`  go [counter.py](https://github.com/adlgrbz/YouTubeCounter/blob/master/counter.py)
 
 ### Getting Started
 Download the packages.
