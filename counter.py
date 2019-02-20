@@ -3,21 +3,20 @@ import serial
 from time import sleep
 
 """
+Sample:
 Home Made Project
 https://www.youtube.com/channel/UCWxZWN7gi0h2ZylI2XF6g9w/featured
                                +-----------------------+
                                        channel_id
 """
 
-# pewdiepie = 'UC-lHJZR3Gqxm24_Vd_AJ5Yw' :)
+channel_id = '>>> Your channal ID <<<'
+api_key = '>>> Your API key <<<'
 
-def counter():
-    channel_id = '*** Your channel ID ***'
-    api_key    = '***  Your API key   ***'
+url = 'https://www.googleapis.com/youtube/v3/channels?part=statistics&id={0}&key={1}'.format(channel_id, api_key)
 
-    url = ('https://www.googleapis.com/youtube/v3/channels?part=statistics&id='
-           + channel_id + '&key=' + api_key)
 
+def counter(url):
     request = requests.get(url)
     data = request.json()   
 
@@ -31,8 +30,6 @@ def counter():
             videoCount
            )
 
-#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#
-
 while True:
     portName = input('\nPort Name (Sample: COM5): ')
 
@@ -44,7 +41,7 @@ while True:
         print('Port Name Incorrect !')
     
 while True:
-    port.write(str.encode(counter()[1])) # subscriberCount
+    port.write(str.encode(counter(url)[1])) # subscriberCount
     sleep(1)
         
 port.close()
