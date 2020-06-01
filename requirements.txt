@@ -1,2 +1,5 @@
-requests
+asyncio
+aiohttp
 pyserial
+beautifulsoup4
+ino; python_version <= '2.7'

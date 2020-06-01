@@ -1,30 +1,65 @@
-# YouTubeCounter
-YouTube Subscriber Counter with Arduino and Python
+# YSCounter
+YouTube Subscriber Counter with Arduino and Python (Without API key). Scrape Live subscriber Counter data from the [Social Blade](https://socialblade.com) website and display it on a 2X16 LCD screen using Arduino. You don't need the *YouTube API key* to do this.
 
-<p align="center">
-  <img width="962" height="471" src="https://github.com/adlgrbz/YouTubeCounter/blob/master/images/sample.jpg">
-</p>
+Visit my friend's YouTube channel! <br/>
+**Nepercos**: [youtube.com/nepercos](https://youtube.com/nepercos)
 
-### API key and Channel ID
-To get API key: [YouTube Data API v3](https://console.cloud.google.com/apis/library/youtube.googleapis.com?q=YouTube&id=125bab65-cfb6-4f25-9826-4dcc309bc508&project=youtube-api-222616&folder&organizationId)
+### Availability
+Only GNU/Linux
 
-Enter your API key [counter.py ](https://github.com/adlgrbz/YouTubeCounter/blob/master/counter.py):
-`api_key    = '***  Your API key   ***'`
+## Requirements
+- Arduino (Preferably the *Uno* model)
+- Serial port cable
+- 2x16 LCD Screen
+- 10K resistor or 10K potentiometer
+- 18 jumper cables
+- Breadboard to test
 
-How is Channel ID retrieved ?
-<p align="left">
-  <img width="514" height="33" src="https://github.com/adlgrbz/YouTubeCounter/blob/master/images/channel-id.JPG">
-</p>
+Circuit Diagrams:
 
-Enter channel ID [counter.py ](https://github.com/adlgrbz/YouTubeCounter/blob/master/counter.py):
-`channel_id = '*** Your channel ID ***'`
+<img src="">
+<img src="">
 
-### Getting Started
-Download the packages: `pip install -r requirements.txt`
+## Installing
+```sh
+git clone https://github.com/adlgrbz/yscounter
+```
 
-Run counter.py: `python counter.py`
+Install via Python:
+```sh
+cd yscounter
+python3 setup.py build && [sudo] python3 setup.py install
+```
 
-Enter port name: `Port Name (Sample: COM5):`
+## Usage
+**1.** Open the software.
 
-#### Last
-:movie_camera: Visit Channel: [https://www.youtube.com/channel/UCWxZWN7gi0h2ZylI2XF6g9w/featured](https://www.youtube.com/channel/UCWxZWN7gi0h2ZylI2XF6g9w/featured)
+```sh
+yscounter
+```
+
+or `Application Menu` > `Utility` > `YSCounter`
+
+**2.** Enter your YouTube channel ID.
+
+How to find a channel ID?
+![]()
+
+**3.** Choose the Arduino port.
+
+**4.** Upload the code to the Arduino card.
+
+**5.** Test the subscriber data.
+
+**6.** Send the data to the card.
+
+## Demo
+
+![]()
+
+## Contributors
+
+<table><tr><td align="center"><a href="https://github.com/GizliProfesor"><img src="https://avatars2.githubusercontent.com/u/44980977?s=460&u=144b3b380716233f08f94f31cb06f2899b86e9fb&v=4" width="100px;" alt=""><br/><sub>GizliProfesor</b></sub></a><br/></td></tr></table>
+
+## License
+This project is licensed under the GNU GPL v3 License - see the [LICENSE](LICENSE) file for details
