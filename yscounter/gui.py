@@ -133,7 +133,7 @@ class YSCounter(tk.Tk):
 
     def build_and_upload_code(self) -> None:
         self.output_text["state"] = tk.NORMAL
-        command = f"ino build && ino upload -p /dev/{self.port_name.get()}"
+        command = f"ino build && ino upload -p {self.port_name.get()}"
         self._insert(f"[Run] {command}")
 
         p = sub.Popen(command, stdout=sub.PIPE, stderr=sub.PIPE, shell=True)
