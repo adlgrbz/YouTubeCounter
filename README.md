@@ -1,5 +1,5 @@
 # YSCounter
-YouTube Subscriber Counter with Arduino and Python (Without API key). Scrape Live subscriber Counter data from the [Social Blade](https://socialblade.com) website and display it on a 2X16 LCD screen using Arduino. You don't need the *YouTube API key* to do this.
+**Y**ouTube **S**ubscriber **Counter** with Arduino and Python (Without API key). Scrape Live subscriber Counter data from the [Social Blade](https://socialblade.com) website and display it on a 2X16 LCD screen using Arduino. You don't need the *YouTube API key* to do this.
 
 Visit my friend's YouTube channel! <br/>
 **Nepercos**: [youtube.com/nepercos](https://youtube.com/nepercos)
@@ -41,7 +41,7 @@ or `Application Menu` > `Utility` > `YSCounter`
 
 ![](demo/demo.gif)
 
-![](demo/demo.jpg)
+<img width="550px;" src="demo/demo.jpg">
 
 ## Contributors
 
