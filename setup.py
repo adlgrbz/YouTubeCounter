@@ -35,7 +35,7 @@ setup(
     keywords="youtube",
     install_requires=["asyncio", "aiohttp", "pyserial", "beautifulsoup4"],
     extras_require={":python_version == '2.7'": ["ino"]},
-    package_data={"yscounter": ["data/*.*"]},
+    package_data={"yscounter": ["data/*.*"], "yscounter": ["src/*.*"]},
     data_files=[
         ("share/icons", ["yscounter/data/icon.png"]),
         ("share/applications", ["yscounter.desktop"]),

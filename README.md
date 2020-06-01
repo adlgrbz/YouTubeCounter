@@ -8,17 +8,13 @@ Visit my friend's YouTube channel! <br/>
 Only GNU/Linux
 
 ## Requirements
-- Arduino (Preferably the *Uno* model)
-- Serial port cable
-- 2x16 LCD Screen
-- 10K resistor or 10K potentiometer
-- 18 jumper cables
-- Breadboard to test
-
-Circuit Diagrams:
-
-<img src="">
-<img src="">
+* Arduino (Preferably the *Uno* model)
+* Serial port cable
+* 2x16 LCD Screen
+* 10K resistor or 10K potentiometer
+* 18 jumper cables
+* Breadboard to test
+* [Click](diagrams/) for circuit diagrams
 
 ## Installing
 ```sh
@@ -32,30 +28,20 @@ python3 setup.py build && [sudo] python3 setup.py install
 ```
 
 ## Usage
-**1.** Open the software.
-
-```sh
-yscounter
-```
-
+1. Open the software. <br/>
+`$ yscounter` <br/>
 or `Application Menu` > `Utility` > `YSCounter`
-
-**2.** Enter your YouTube channel ID.
-
-How to find a channel ID?
-![]()
-
-**3.** Choose the Arduino port.
-
-**4.** Upload the code to the Arduino card.
-
-**5.** Test the subscriber data.
-
-**6.** Send the data to the card.
+2. Enter your YouTube channel ID.
+3. Choose the Arduino port.
+4. Upload the code to the Arduino card.
+5. Test the subscriber data.
+6. Send the data to the card.
 
 ## Demo
 
-![]()
+![](demo/demo.gif)
+
+![](demo/demo.jpg)
 
 ## Contributors
 
