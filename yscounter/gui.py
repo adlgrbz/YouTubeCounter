@@ -10,7 +10,7 @@ from bs4 import BeautifulSoup
 from serial.tools import list_ports
 
 
-__version__ = "2.0.0"
+__version__ = "2.3.0"
 __author__ = "Adil Gürbüz"
 __contact__ = "adlgrbz@tutamail.com"
 __source__ = "https://github.com/adlgrbz/yscounter"
@@ -21,6 +21,9 @@ this_dir, this_filename = path.split(__file__)
 class YSCounter(tk.Tk):
     def __init__(self):
         super().__init__()
+
+        self.port = serial.Serial()
+        self.cfg = self.get_config()
         self._init_window()
 
         self.line = 0
@@ -28,17 +31,21 @@ class YSCounter(tk.Tk):
 
         self.url = "https://socialblade.com/youtube/channel/"
         self.headers = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0;) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4086.0 Safari/537.36"
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:75.0) Gecko/20100101 Firefox/75.0"
         }
 
-        self.port = serial.Serial()
-        self.config = self.get_config()
+    def _init_window(self) -> None:
+        self.title("YSCounter")
+        self.config(padx=5, pady=5)
 
-        lf = tk.LabelFrame(padx=5, pady=5)
-        lf.pack(pady=(0, 5), fill=tk.BOTH)
+        self.style = ttk.Style()
+        self.style.theme_use("clam")
 
         _ = tk.PhotoImage(file=f"{this_dir}/data/icon.gif")
         self.icon = _
+
+        lf = tk.LabelFrame(padx=5, pady=5)
+        lf.pack(pady=(0, 5), fill=tk.BOTH)
 
         self.tk.call("wm", "iconphoto", self._w, _)
 
@@ -53,7 +60,7 @@ class YSCounter(tk.Tk):
         self.channel_id = ttk.Entry(lf)
         self.channel_id.grid(row=0, column=2, padx=5)
 
-        self.channel_id.insert(0, self.config["channel_id"])
+        self.channel_id.insert(0, self.cfg["channel_id"])
 
         ttk.Label(lf, text="Arduino Port Name:").grid(
             row=1, column=1, sticky=tk.W
@@ -98,13 +105,6 @@ class YSCounter(tk.Tk):
         )
 
         ttk.Button(text="Clear Log", command=self.clear_log).pack(side=tk.LEFT,)
-
-    def _init_window(self) -> None:
-        self.title("YSCounter")
-        self.config(padx=5, pady=5)
-
-        self.style = ttk.Style()
-        self.style.theme_use("clam")
 
         self.minsize(
             self.winfo_screenmmwidth(), self.winfo_screenmmheight(),

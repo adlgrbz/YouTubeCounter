@@ -1,5 +1,13 @@
 # YSCounter
+
+![](https://img.shields.io/badge/python-3%2B-blue)
+![](https://img.shields.io/badge/pyserial-3.4.1-yellow)
+![](https://img.shields.io/badge/arduino-uno-00878F)
+![](https://img.shields.io/badge/licesnse-GNU%20GPL-green)
+
 **Y**ouTube **S**ubscriber **Counter** with Arduino and Python (Without API key). Scrape Live subscriber Counter data from the [Social Blade](https://socialblade.com) website and display it on a 2X16 LCD screen using Arduino. You don't need the *YouTube API key* to do this.
+
+![](yscounter/data/icon.gif)
 
 Visit my friend's YouTube channel! <br/>
 **Nepercos**: [youtube.com/nepercos](https://youtube.com/nepercos)
@@ -8,13 +16,17 @@ Visit my friend's YouTube channel! <br/>
 Only GNU/Linux
 
 ## Requirements
-* Arduino (Preferably the *Uno* model)
-* Serial port cable
-* 2x16 LCD Screen
-* 10K resistor or 10K potentiometer
-* 18 jumper cables
-* Breadboard to test
-* [Click](diagrams/) for circuit diagrams
+
+[Click](diagrams/) for circuit diagrams...
+
+Piece | Component
+--- | ---
+1x | Arduino (Preferably the *Uno* model)
+1x | Serial port cable
+1x | 2x16 LCD screen
+1x | 10K resistor or 10K potentiometer
+18x | Jumper cable
+1x | Breadboard to test
 
 ## Installing
 ```sh
@@ -28,14 +40,14 @@ python3 setup.py build && [sudo] python3 setup.py install
 ```
 
 ## Usage
-1. Open the software. <br/>
-`$ yscounter` <br/>
-or `Application Menu` > `Utility` > `YSCounter`
-2. Enter your YouTube channel ID.
-3. Choose the Arduino port.
-4. Upload the code to the Arduino card.
-5. Test the subscriber data.
-6. Send the data to the card.
+1. Open the software <br/>
+`$ yscounter` or `Application Menu` > `Utility` > `YSCounter`
+2. Enter your YouTube channel ID <br/>
+How to find the [channel ID](https://support.google.com/youtube/answer/3250431?hl=en)?
+3. Choose the Arduino port
+4. Upload the code to the Arduino card
+5. Test the subscriber data
+6. Send the data to the Arduino card
 
 ## Demo
 
